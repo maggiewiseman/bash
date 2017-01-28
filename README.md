@@ -30,6 +30,11 @@ ln -s bash/.vimrc ~/.vimrc
 #pulling down this file remotely. This file lets you type "fuck" to help figure out git commands
 wget -O - https://raw.githubusercontent.com/nvbn/thefuck/master/install.sh | sh - && $0
 ```
+Optional Node support:
+brew install node
+
+Optional CoffeeScript support:
+npm install -g coffee-script
 
 Optional Python support tools:
 ```
