@@ -4,22 +4,30 @@ My bash settings
 
 New setup (installs homebrew first to facilitate rest of installation)
 ```
+#make sure you are in the home directory
 cd
 
+#install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+#install some utilities that are useful
 brew install hub bash-git-prompt gpg wget
 
+#clone save bash profile from git so that it can be used on new computer
 git clone git@github.com:tvaughan77/bash.git
 
+#if you have a .bash_profile already set up, make a backup copy
 cp ~/.bash_profile ~/.bash_profile.bak
 
+#copy the cloned .bash_profile to the home directory to be used as the new .bash_profile
 cp bash/.bash_profile ~/
 
+#some of the commands in .bash_profile use .myshell  and .vimrc so make a symbolic links
 ln -s bash/myshell ~/.myshell
 
 ln -s bash/.vimrc ~/.vimrc
 
+#pulling down this file remotely. This file lets you type "fuck" to help figure out git commands
 wget -O - https://raw.githubusercontent.com/nvbn/thefuck/master/install.sh | sh - && $0
 ```
 
