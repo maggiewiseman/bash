@@ -14,7 +14,7 @@ cd
 brew install hub bash-git-prompt gpg wget
 
 #clone save bash profile from git so that it can be used on new computer
-git clone git@github.com:tvaughan77/bash.git
+git clone git@github.com:maggiewiseman/bash.git
 
 #if you have a .bash_profile already set up, make a backup copy
 cp ~/.bash_profile ~/.bash_profile.bak
@@ -27,9 +27,9 @@ ln -s bash/myshell ~/.myshell
 
 ln -s bash/.vimrc ~/.vimrc
 
-#pulling down this file remotely. This file lets you type "fuck" to help figure out git commands
-wget -O - https://raw.githubusercontent.com/nvbn/thefuck/master/install.sh | sh - && $0
-```
+#Need thefuck b/c I'm using Tom's setup
+brew install thefuck
+
 Optional Node support:
 brew install node
 
@@ -67,6 +67,7 @@ And then install:
 * Evernote
 * Slack
 * Spotify
-* Netbeans
+* Atom
+* Google Drive
 
 And, for OSX, to show all files in finder: `defaults write com.apple.finder AppleShowAllFiles YES`
