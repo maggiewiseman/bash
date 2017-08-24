@@ -1,5 +1,5 @@
 alias git="hub"
-alias gpom="git pull origin master"
+alias gpom="git push origin maggie"
 alias gptm="git push tom master"
 alias gcm="git checkout master"
 alias gpl="git log --pretty=oneline --graph --all"
