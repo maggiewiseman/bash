@@ -1,8 +1,10 @@
 source ~/.myshell/aliases.bash
 source ~/.myshell/prompt.bash
-source ~/.myshell/upside.bash
-source ~/.myshell/docker.bash
 source ~/.myshell/git.bash
+
+
+alias ginger='cd ~/dev/ginger-code/'
+alias petition='cd ~/dev/ginger-petition/'
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
